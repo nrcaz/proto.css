@@ -1,6 +1,7 @@
 /* VAR */
 :root {
-	--fontColor: black;
+	--fontColor: #1a1a1a;
+	--titleBColor: lightgrey;
 }
 /* GENERAL */
 header {
@@ -11,6 +12,9 @@ main {
 }
 footer {
 	width: 100%;
+}
+a {
+	color: var(--fontColor);
 }
 /* NAV */
 ul,
@@ -24,7 +28,43 @@ ol {
 li {
 	padding: 2rem 1rem 2rem 1rem;
 }
-a {
+nav a {
 	text-decoration: none;
 	color: var(--fontColor);
+}
+/* TITLE */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+	background-color: var(--titleBColor);
+}
+h3,
+h4,
+h5,
+h6 {
+	padding: 0.5rem 0;
+}
+/* TABLE */
+table {
+	border-collapse: collapse;
+}
+tbody > tr:nth-child(2n + 1) {
+	background-color: #f7f7f9;
+}
+tbody > tr:nth-child(2n) {
+	background-color: #eceeef;
+}
+td,
+th {
+	padding: 1.5rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+th {
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
