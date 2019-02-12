@@ -1,0 +1,30 @@
+/* VAR */
+:root {
+	--fontColor: black;
+}
+/* GENERAL */
+header {
+	width: 100%;
+}
+main {
+	width: 100%;
+}
+footer {
+	width: 100%;
+}
+/* NAV */
+ul,
+ol {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+li {
+	padding: 2rem 1rem 2rem 1rem;
+}
+a {
+	text-decoration: none;
+	color: var(--fontColor);
+}
