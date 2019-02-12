@@ -1,6 +1,8 @@
 /* VAR */
 :root {
 	--fontColor: #1a1a1a;
+	--buttonColor: #1a1a1a;
+	--buttonFont: white;
 	--titleBColor: lightgrey;
 }
 /* GENERAL */
@@ -49,6 +51,29 @@ h4,
 h5,
 h6 {
 	padding: 0.5rem 0;
+}
+/* SECTION */
+section {
+	width: 100%;
+	padding: 3rem 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+/* ARTICLE */
+article {
+	margin: 1rem;
+}
+/* FIGURE */
+figure {
+	width: 18rem;
+}
+/* BUTTON */
+button {
+	padding: 1rem 2rem;
+	background-color: var(--buttonColor);
+	color: var(--buttonFont);
+	border: none;
 }
 /* TABLE */
 table {
