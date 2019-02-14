@@ -3,7 +3,10 @@
 	--fontColor: #1a1a1a;
 	--buttonColor: #1a1a1a;
 	--buttonFont: white;
-	--titleBColor: lightgrey;
+	--titleBColor: #white;
+	--titleFColor: #1a1a1a;
+	--liBColor: #1a1a1a;
+	--liFColor: white;
 }
 /* GENERAL */
 header {
@@ -17,6 +20,7 @@ footer {
 }
 a {
 	color: var(--fontColor);
+	font-weight: bold;
 }
 /* NAV */
 ul,
@@ -29,6 +33,13 @@ ol {
 }
 li {
 	padding: 2rem 1rem 2rem 1rem;
+	transition: 0.5s;
+}
+li:hover {
+	background-color: var(--liBColor);
+}
+li:hover > a {
+	color: var(--liFColor);
 }
 nav a {
 	text-decoration: none;
@@ -45,6 +56,7 @@ h6 {
 	text-align: center;
 	padding: 1rem 0;
 	background-color: var(--titleBColor);
+	color: var(--titleFColor);
 }
 h3,
 h4,
@@ -67,10 +79,24 @@ article {
 /* FIGURE */
 figure {
 	width: 18rem;
+	margin: 0.25rem;
+}
+figure img {
+	height: 18rem;
+	width: 18rem;
+	object-fit: contain;
+}
+figcaption {
+	padding: 1rem 0;
+}
+figcaption p {
+	padding: 1rem;
 }
 /* BUTTON */
 button {
 	padding: 1rem 2rem;
+	margin: 0 auto;
+	display: block;
 	background-color: var(--buttonColor);
 	color: var(--buttonFont);
 	border: none;
@@ -82,9 +108,9 @@ table {
 tbody > tr:nth-child(2n + 1) {
 	background-color: #f7f7f9;
 }
-tbody > tr:nth-child(2n) {
+/* tbody > tr:nth-child(2n) {
 	background-color: #eceeef;
-}
+} */
 td,
 th {
 	padding: 1.5rem;
@@ -92,4 +118,35 @@ th {
 }
 th {
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* FORM */
+form {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 20rem;
+}
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 1rem 1.5rem;
+	margin: 0 1rem 1rem 1rem;
+	background-color: #f7f7f9;
+	border: none;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #55595c;
+}
+label {
+	width: 100%;
+	margin: 0.5rem 1rem;
+	color: #ced4da;
+}
+input:focus,
+textarea:focus {
+	outline-color: #ced4da7e;
+	outline-style: solid;
+	outline-width: 4px;
+	background-color: white;
 }
