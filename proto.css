@@ -84,7 +84,7 @@ figure {
 figure img {
 	height: 18rem;
 	width: 18rem;
-	object-fit: contain;
+	object-fit: cover;
 }
 figcaption {
 	padding: 1rem 0;
